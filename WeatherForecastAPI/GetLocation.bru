@@ -1,0 +1,17 @@
+meta {
+  name: GetLocation
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://api.openweathermap.org/geo/1.0/direct?q=Ставрополь&limit=1&appid={{API}}
+  body: none
+  auth: none
+}
+
+params:query {
+  q: Ставрополь
+  limit: 1
+  appid: {{API}}
+}

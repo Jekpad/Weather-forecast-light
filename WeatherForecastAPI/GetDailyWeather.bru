@@ -1,0 +1,18 @@
+meta {
+  name: GetDailyWeather
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://api.openweathermap.org/data/3.0/onecall?lat=45.0433245&lon=41.9690934&exclude=daily&appid={{API}}
+  body: none
+  auth: none
+}
+
+params:query {
+  lat: 45.0433245
+  lon: 41.9690934
+  exclude: daily
+  appid: {{API}}
+}

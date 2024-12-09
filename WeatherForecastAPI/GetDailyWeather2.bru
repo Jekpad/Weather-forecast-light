@@ -1,0 +1,18 @@
+meta {
+  name: GetDailyWeather2
+  type: http
+  seq: 4
+}
+
+get {
+  url: api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid={{API}}&lang=ru
+  body: none
+  auth: none
+}
+
+params:query {
+  lat: 44.34
+  lon: 10.99
+  appid: {{API}}
+  lang: ru
+}
